@@ -27,7 +27,7 @@ public class ValidatorTest {
 
     @Test
     public void emailValidate() {
-        String email = "test@gmail.com";
+        String email = "Test@gmail.com";
         assertEquals(true, validator.emailValidate(email));
     }
 }

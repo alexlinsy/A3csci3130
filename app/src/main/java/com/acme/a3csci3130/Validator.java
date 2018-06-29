@@ -24,7 +24,7 @@ public class Validator {
     }
 
     public boolean emailValidate(String email) {
-        Pattern emailCheck = Pattern.compile("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$");
+        Pattern emailCheck = Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}$", Pattern.CASE_INSENSITIVE);
 
         if(emailCheck.matcher(email).find()) {
             return true;
